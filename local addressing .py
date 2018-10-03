@@ -8,7 +8,7 @@ highly inefficient, because the script have to wait for every sec.'''
 
 import threading,os,time
 class tt(threading.Thread):
-      def __init__(sewlf,hos):
+      def __init__(self,hos):
           super(tt,self).__init__()
           self.h=hos
       def run(self):
