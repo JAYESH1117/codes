@@ -8,18 +8,17 @@ highly inefficient, because the script have to wait for every sec.'''
 
 import threading,os,time
 class tt(threading.Thread):
-      def __init__(self,hos):
-          super(tt,self).__init__()
-          self.h=hos
-      def run(self):
-          resp=os.system("ping-n.1"+self.h)
-          print(resp)
-          if resp==0:
-             print(self.h+"is up")
-          else:
-          print(self.h+"is down")
+    def __init__(self,hos):
+        super(tt,self).__init__()
+        self.h=hos
+    def run(self):
+        resp=os.system("ping-n.1"+self.h)
+        print(resp)
+        if resp==0:
+            print(self.h+"is up")
+        else:
+            print(self.h+"is down")
           
 inp=input("hey there hope it works")
 pp=tt(inp)
 pp.start()
-            
