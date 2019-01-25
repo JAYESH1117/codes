@@ -11,8 +11,9 @@ int i=0;
 int main()
 {
 	char str[50];
+	printf("Enter a word\n");
 	gets(str);
-    
+    printf("The length of the word is:\n");
 	printf("%d", strlen(str));
 	return 0;
 }
